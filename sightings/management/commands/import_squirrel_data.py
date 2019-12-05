@@ -19,7 +19,7 @@ class Command(BaseCommand):
             header=csvfile.readline().strip().split(',')
             fields_name=[x.lower().replace(' ', '_').replace('/', '_') for x in header]
             for row in reader:
-                 obj = squirrel()
+                 obj = Squirrel()
                  for i, field in enumerate(row):
                      if field == 'true':
                          field=True
