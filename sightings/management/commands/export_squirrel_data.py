@@ -1,7 +1,7 @@
 import csv
 
 from django.core.management.base import BaseCommand
-from squirrels.models import Squirrel 
+from sightings.models import Squirrel 
 
 class Command(BaseCommand):
     def add_arguments(self, parser):

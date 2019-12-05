@@ -2,7 +2,7 @@ import os
 import csv
 
 from django.core.management.base import BaseCommand, CommandError
-from squirrels.models import Squirrel
+from sightings.models import Squirrel
 from django.contrib.gis.geos import GEOSGeometry
 
 class Command(BaseCommand):
