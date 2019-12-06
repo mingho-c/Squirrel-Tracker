@@ -27,6 +27,7 @@ def map(request):
     squirrels = Squirrel.objects.all()
     context = {
             's': squirrels,
+            }
     return render(request, 'sightings/map.html', context)
 
 def edit(request, unique_squirrel_id):
