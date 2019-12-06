@@ -1,0 +1,16 @@
+<html leng='en>
+	<head>
+		<title>Create New Sighting</title>
+	</head>
+	<body>
+                <form method='post'>
+                  {% csrf_token %}
+		   {% for field in form %}
+		    <div class = 'fieldWrapper'>
+                     {{field.label}}{{field}}
+                    </div>
+                   {% endfor %}
+                    <div class = 'fieldWrapper'><p><input type='submit' value='add'></p>
+		    </div>
+        </body>
+</html>
