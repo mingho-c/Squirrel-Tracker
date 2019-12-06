@@ -14,7 +14,6 @@ class Squirrel(models.Model):
 
     unique_squirrel_id = models.CharField(
             max_length=20, default=None, primary_key=True, blank=True,
-            null=True,
             )
     
     hectare = models.CharField(
