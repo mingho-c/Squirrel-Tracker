@@ -18,10 +18,10 @@ def add(request):
             return redirect('/sightings')
     else:
         form = SquirrelForm()
-        context = {
-            'f': form,
+    context = {
+            'form': form,
                 }
-        return render(request, 'sightings/add.html', context)
+    return render(request, 'sightings/add.html', context)
 
 def map(request):
     squirrels = Squirrel.objects.all()
@@ -39,10 +39,10 @@ def edit(request, unique_squirrel_id):
             return redirect(f'/sightings/{unique_squirrel_id}')
     else:
         form = SquirrelForm(instance = squirrels)
-        context = {
-            'f': form,
+    context = {
+            'form': form,
                 }
-        return render(request, 'sightings/edit.html', context)
+    return render(request, 'sightings/edit.html', context)
 
 
 def stats(request):
