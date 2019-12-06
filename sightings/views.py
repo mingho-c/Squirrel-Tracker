@@ -43,3 +43,12 @@ def edit(request, unique_squirrel_id):
             'f': form,
                 }
         return render(request, 'sightings/edit.html', context)
+
+
+def stats(request):
+    squirrels = Squirrel.objects.all()
+    context={
+            's':squirrels,
+            }
+    return render(request,'sightings/stats.html',context)
+   

@@ -6,7 +6,7 @@ from .models import Squirrel
 class SquirrelForm(ModelForm):
     class Meta:
         model = Squirrel
-        fields = '__all__'
+        fields = 
         
         labels = {
                 'x': _('latitude'),
