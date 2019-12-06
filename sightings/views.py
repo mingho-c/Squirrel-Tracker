@@ -8,3 +8,14 @@ def all(request):
             's': squirrels,
             }
     return render(request, 'sightings/all.html', context)
+
+
+
+def map(request):
+    data=Squirrel.objects.all()
+    stu={
+            "s":data,
+    }
+    return render(request,'sightings/map.html',stu)
+
+
