@@ -10,7 +10,6 @@ def all(request):
             }
     return render(request, 'sightings/all.html', context)
 
-
 def add(request):
     if request.method == 'POST':
         form = SquirrelForm(request.POST)
@@ -23,3 +22,11 @@ def add(request):
             'f': form,
             }
     return render(request, 'sightings/add.html', context)
+
+def map(request):
+    squirrels = Squirrel.objects.all()
+    context = {
+            "s": squirrels,
+    }
+    return render(request, 'sightings/map.html', context)
+
