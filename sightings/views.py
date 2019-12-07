@@ -61,5 +61,6 @@ def stats(request):
     Total Number of Squirrels Chasing: {chase_num}\n\
     Total Number of Squirrels Climbing: {climb_num}\n\
     """
+    
     return HttpResponse(text, content_type = 'text/plain')
    
