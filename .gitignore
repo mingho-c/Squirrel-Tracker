@@ -5,4 +5,8 @@ db.sqlite3
 db.sqlite3-journal
 
 
-__pycache__/
+*/__pycache__/*
+sightings/management/commands/__pycache__/*
+sightings/migrations/__pycache__/*
+project/__pycache__/*
+sightings/__pycache__/*
