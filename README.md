@@ -36,7 +36,7 @@ It can also display the location of the squirrel sightings on an [OpenStreets ma
   
 * Update
   + Description: A view to update a particular sighting. 
-  + Location: */sightings/<unique-squirrel-id>*
+  + Location: */sightings/unique-squirrel-id*
   + Usage: Users can click on the 'edit' button to update a squirrel sighting on the page.
   
 * Add
