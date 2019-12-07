@@ -57,7 +57,5 @@ It can also display the location of the squirrel sightings on an [OpenStreets ma
 
 
 ## Server Link
-!!needs to be inserted!!
-
-[](https://<your project id>.appspot.com/)
+https://tools-for-analytics-256118.appspot.com/
 
