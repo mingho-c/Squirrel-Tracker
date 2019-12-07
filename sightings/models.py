@@ -3,69 +3,110 @@ from django.utils.translation import gettext as _
 
 class Squirrel(models.Model):
     x = models.DecimalField(
-            max_digits=1007, decimal_places=10, default=None, blank=True,
-            help_text=_('Latitude Coordinate'),null=True,
+            max_digits=1007, 
+            decimal_places=10, 
+            default=None, 
+            blank=True,
+            help_text=_('Latitude Coordinate'), 
+            null=True,
             )
 
     y = models.DecimalField(
-            max_digits=1006, decimal_places=10, default=None, blank=True,
-            help_text=_('Longitude Coordinate'),null=True,
+            max_digits=1006, 
+            decimal_places=10, 
+            default=None, 
+            blank=True,
+            help_text=_('Longitude Coordinate'), 
+            null=True,
             )
 
     unique_squirrel_id = models.CharField(
-            max_length=20, default=None, primary_key=True, blank=True,
+            max_length=20, 
+            default=None, 
+            primary_key=True, 
+            blank=True,
             )
     
     hectare = models.CharField(
-            max_length=10, default=None, blank=True,null=True,
+            max_length=10, 
+            default=None, 
+            blank=True, 
+            null=True,
             )
 
     shift = models.CharField(
-            max_length=10, default=None, blank=True,null=True,
+            max_length=10, 
+            default=None, 
+            blank=True, 
+            null=True,
             )
 
     date = models.CharField(
-            max_length=20, default=0, blank=True,null=True,
+            max_length=20, 
+            default=0, 
+            blank=True, 
+            null=True,
             )
 
     hectare_squirrel_number = models.IntegerField(
-            default=0, blank=True,null=True,
+            default=0, 
+            blank=True, 
+            null=True,
             )
 
     age = models.CharField(
-            max_length=8, default=None, blank=True,null=True,
+            max_length=8, 
+            default=None, 
+            blank=True, 
+            null=True,
             )
 
     primary_fur_color = models.CharField(
-            max_length=8, default=None, blank=True,null=True,
+            max_length=8, 
+            default=None, 
+            blank=True, 
+            null=True,
             )
 
     highlight_fur_color = models.CharField(
-            max_length=8, default=None, blank=True,null=True,
+            max_length=8, 
+            default=None, 
+            blank=True, 
+            null=True,
             )
 
     combination_of_primary_and_highlight_color = models.CharField(
-            max_length=100, default=None, blank=True,
+            max_length=100, 
+            default=None, 
+            blank=True,
             null=True,
             )
 
     color_notes = models.CharField(
-            max_length=100, default=None, blank=True,
+            max_length=100, 
+            default=None, 
+            blank=True,
             null=True,
             )
 
     location = models.CharField(
-            max_length=100, default=None, blank=True,
+            max_length=100, 
+            default=None, 
+            blank=True,
             null=True,
             )
 
     above_ground_sighter_measurement = models.CharField(
-            max_length=10, default=None, blank=True,
+            max_length=10, 
+            default=None, 
+            blank=True,
             null=True,
             )
 
     specific_location = models.CharField(
-            max_length=100, default=None, blank=True,
+            max_length=100, 
+            default=None, 
+            blank=True,
             null=True,
             help_text=_('specific location of squirrel'),
             )
